@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+.element-yes {
+  background-color: #fff;
+  color: #555;
+  border: 1px solid black;
+}
+.element-no {
+  background-color: #555;
+  color: rgb(255, 254, 254);
+}
+body {
+  font-family: sans-serif;
+  color: #555;
+  background-color: #f7f7f7;
+}
+.container {
+  width: 85%;
+  margin: 2rem auto;
+}
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 3rem;
+}
+.element {
+  position: relative;
+  width: 100%;
+  padding: 1.8rem;
+  margin: 3rem 0;
+}
+.img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.heading {
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 0.6rem 0;
+}
+.day {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0.9rem 0;
+}
+.temper {
+  font-size: 1.4rem;
+  margin: 2.9rem 0;
+  display: flex;
+}
+.temper p {
+  font-size: 5rem;
+  margin-right: 0.7rem;
+}
+.desc {
+  display: flex;
+  justify-content: space-between;
+}
+.kun {
+  font-size: 1.8rem;
+  margin-top: 5.5rem;
+}
+.description {
+  font-size: 1.7rem;
+}
+li {
+  list-style: none;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: rgb(85, 85, 85);
+  color: #fff;
+  padding: 2rem;
+  font-size: 1.8rem;
+  margin: 4rem 0;
+}
+.newList {
+  display: flex;
+  font-size: 1.5rem;
+}
+.title {
+  display: block;
+  margin: 3rem auto;
+  font-size: 3.4rem;
+  color: rgb(10, 90, 24);
+  text-align: center;
+}
+form {
+  margin-left: 50rem;
+}
+.findBtn {
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+}
+.inputCreate {
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  padding: 1rem 4rem;
+  margin-bottom: 3rem;
+}
+.openBtn {
+  background-color: #fff;
+  color: #555;
+  padding: 1rem;
+  width: 15rem;
+  font-size: 1.4rem;
+  text-align: center;
+  cursor: pointer;
+}
