@@ -9,19 +9,30 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-.element-yes {
-  background-color: #fff;
+.element-1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./kun.webp);
   color: #555;
-  border: 1px solid black;
+  border: none;
 }
-.element-no {
-  background-color: #555;
+.element-0 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./tun.webp);
   color: rgb(255, 254, 254);
+  border: none;
 }
 body {
   font-family: sans-serif;
   color: #555;
-  background-color: #f7f7f7;
+  /* opacity: 0.; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./happy.webp);
 }
 .container {
   width: 85%;
@@ -38,6 +49,7 @@ body {
   width: 100%;
   padding: 1.8rem;
   margin: 3rem 0;
+  opacity: 0.8;
 }
 .img {
   position: absolute;
@@ -94,7 +106,7 @@ li {
   display: block;
   margin: 3rem auto;
   font-size: 3.4rem;
-  color: rgb(10, 90, 24);
+  color: rgb(167, 0, 103);
   text-align: center;
 }
 form {

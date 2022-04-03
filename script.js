@@ -15,7 +15,7 @@ findBtn.addEventListener("click", (evt) => {
 });
 function getUrl() {
   fetch(
-    `http://api.weatherstack.com/current?access_key=ebc2c14341b242accc4941b9a5c23bbf&query=${search}`
+    `https://api.weatherapi.com/v1/current.json?key=44d37f22c06d4dbba27165419220204&q=${search}&aqi=no`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -25,27 +25,23 @@ function getUrl() {
     });
 }
 const getWeather = function () {
-  console.log(malumot);
-
   let html = `
     <div class="element element-${malumot.current.is_day}">
     <div class="heading">${malumot.location.name}</div>
     <div class="day">${malumot.location.localtime}</div>
     <div class="desc">
             <div class="temper">
-              <p>${malumot.current.temperature}</p>
+              <p>${malumot.current.temp_c}</p>
               <sup>o</sup>C
             </div>
             <div class="kun">${
-              malumot.current.is_day == "yes" ? "KUN" : "TUN"
+              malumot.current.is_day == "1" ? "KUN" : "TUN"
             }</div>
           </div>
     <div class="desc">
-      <div class="description">IT'S ${
-        malumot.current.weather_descriptions[0]
-      }</div>
+      <div class="description">IT'S ${malumot.current.condition.text}</div>
       <div class="img"><img src="${
-        malumot.current.weather_icons[0]
+        malumot.current.condition.icon
       }" alt="" /></div>
     </div>
   </div>
